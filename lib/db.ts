@@ -1,4 +1,4 @@
-import { PrismaClient } from "@prisma/client/extension";
+import { PrismaClient } from "@prisma/client";
 
 // following code is used to prevent the Prisma Client from being instantiated multiple times
 // in development mode, which can lead to issues with hot reloading and memory leaks.
