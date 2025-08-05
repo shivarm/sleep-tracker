@@ -1,12 +1,12 @@
 import React from 'react'
 import { currentUser } from '@clerk/nextjs/server'
-import { checkUser } from '@/lib/checkUser'
+import Guest from '@/components/Guest'
 
 export default async function HomePage() {
-  const user = await currentUser()
+  const user = await currentUser();
   
-  if (user) {
-    await checkUser()
+  if (!user) {
+    return <Guest />
   }
 
   return (
