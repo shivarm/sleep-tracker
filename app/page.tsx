@@ -1,4 +1,5 @@
 import { currentUser } from "@clerk/nextjs/server";
+import Image from "next/image";
 
 import Guest from "@/components/Guest";
 import AddNewRecord from "@/components/AddNewRecord";
@@ -17,10 +18,12 @@ export default async function HomePage() {
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-lg shadow-md flex flex-col sm:flex-row items-center sm:items-start gap-6">
             {/* User Image */}
-            <img
+            <Image
               src={user.imageUrl}
               alt={`${user.firstName}&#39;s profile`}
               className="w-24 h-24 rounded-full border border-gray-300 shadow-md"
+              width={96}
+              height={96}
             />
 
             {/* User Details */}
