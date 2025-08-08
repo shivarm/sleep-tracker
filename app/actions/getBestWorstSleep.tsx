@@ -21,13 +21,17 @@ async function getBestWorstSleep(): Promise<{
     });
 
     if (!records || records.length === 0) {
-      return { bestSleep: 0, worstSleep: 0 };
+      return { bestSleep: undefined, worstSleep: undefined };
     }
 
     const amount = records.map((record) => record.amount);
+    const bestSleep = Math.max(...amount); // Highest amount
 
-    const bestSleep = Math.max(...amount); // Heighest amount
-    const worstSleep = Math.min(...amount); // lowest amount
+    // If only one record, worstSleep is undefined
+    let worstSleep: number | undefined = undefined;
+    if (amount.length > 1) {
+      worstSleep = Math.min(...amount);
+    }
 
     return { bestSleep, worstSleep };
   } catch (error) {
