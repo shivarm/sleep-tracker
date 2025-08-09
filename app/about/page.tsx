@@ -61,7 +61,7 @@ const AboutPage = () => {
         </p>
         <Link
           href='/sign-up'
-          className='inline-block bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white hover:text-purple-700 px-6 py-3 rounded-md font-medium shadow-md transition'
+          className='inline-block bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white hover:text-white px-6 py-3 rounded-md font-medium shadow-md transition'
         >
          Start Today
         </Link>
