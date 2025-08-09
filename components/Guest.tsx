@@ -29,10 +29,7 @@ const Guest = () => {
             priority
           />
         </div>
-      </div>
-
-      {/* Divider */}
-      <div className="h-1 bg-gray-300"></div>
+      </div>      
 
       <div className="py-16 px-8 bg-white">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
@@ -62,14 +59,11 @@ const Guest = () => {
           </div>
         </div>
       </div>
-
-      {/* Divider */}
-      <div className="h-1 bg-gray-300"></div>
-
+ 
       {/* Testimonials Section */}
       <div className="py-16 px-8 bg-gray-100">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">What Our Users Say</h2>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-lg shadow">
             <p className="text-gray-700 mb-4">
               &quot;After using SleepTracker for just 2 weeks, my sleep quality improved by 40%. The detailed analytics helped me understand my patterns better.&quot;
