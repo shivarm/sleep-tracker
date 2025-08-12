@@ -21,6 +21,7 @@ model User {
   imageUrl    String?
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+  sleepGoal   Float?   @default(8) 
   Records     Record[]
 }
 
