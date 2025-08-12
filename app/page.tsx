@@ -7,10 +7,11 @@ import RecordChart from "@/components/RecordChart";
 import AverageSleep from "@/components/AverageSleep";
 import BestWorstSleep from "@/components/BestWorstSleep";
 import SleepHistory from "@/components/SleepHistory";
+import SleepGoalSetter from '@/components/SleepGoalSetter';
+import SleepProgress from '@/components/SleepProgress';
 
 export default async function HomePage() {
   const user = await currentUser();
-
   if (!user) {
     return <Guest />;
   }
@@ -51,6 +52,9 @@ export default async function HomePage() {
               </div>
             </div>
           </div>
+          {/* Sleep Goal Setter and Progress */}
+          <SleepGoalSetter />
+          <SleepProgress />
           {/* Placeholder for AddSleepRecord */}
           <AddNewRecord />
         </div>
