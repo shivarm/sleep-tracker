@@ -1,7 +1,20 @@
-import { SignInButton } from "@clerk/nextjs";
+"use client";
+
+import { useEffect } from "react";
+import { SignInButton, useUser } from "@clerk/nextjs";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const Guest = () => {
+  const { isSignedIn } = useUser();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (isSignedIn) {
+      router.replace("/");
+    }
+  }, [isSignedIn, router]);
+
   return (
     <div className="font-sans bg-gray-100 text-gray-800">
       {/* Hero Section */}
@@ -29,7 +42,7 @@ const Guest = () => {
             priority
           />
         </div>
-      </div>      
+      </div>
 
       <div className="py-16 px-8 bg-white">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
@@ -59,26 +72,29 @@ const Guest = () => {
           </div>
         </div>
       </div>
- 
+
       {/* Testimonials Section */}
       <div className="py-16 px-8 bg-gray-100">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">What Our Users Say</h2>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-lg shadow">
             <p className="text-gray-700 mb-4">
-              &quot;After using SleepTracker for just 2 weeks, my sleep quality improved by 40%. The detailed analytics helped me understand my patterns better.&quot;
+              &quot;After using SleepTracker for just 2 weeks, my sleep quality improved by 40%. The
+              detailed analytics helped me understand my patterns better.&quot;
             </p>
             <p className="text-purple-500 font-bold">- Alex Chen</p>
           </div>
           <div className="bg-white p-6 rounded-md shadow">
             <p className="text-gray-700 mb-4">
-              &quot;As a shift worker, tracking my irregular sleep was challenging until I found SleepTracker. Now I can optimize my rest regardless of my schedule.&quot;
+              &quot;As a shift worker, tracking my irregular sleep was challenging until I found
+              SleepTracker. Now I can optimize my rest regardless of my schedule.&quot;
             </p>
             <p className="text-purple-500 font-bold">- Maria Rodriguez</p>
           </div>
           <div className="bg-white p-6 rounded-md shadow">
             <p className="text-gray-700 mb-4">
-              &quot;The sleep recommendations are spot-on! I&apos;ve reduced my time to fall asleep from 45 minutes to just 10 minutes. Life-changing app!&quot;
+              &quot;The sleep recommendations are spot-on! I&apos;ve reduced my time to fall asleep
+              from 45 minutes to just 10 minutes. Life-changing app!&quot;
             </p>
             <p className="text-purple-500 font-bold">- David Kim</p>
           </div>
