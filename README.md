@@ -1,3 +1,8 @@
+<div align="center">
+  <img src="public/image.png" alt="Sleep Tracker Demo" />
+</div>
+<br/>
+
  # 😴 Sleep Tracker
 
 A modern sleep tracking web application built with Next.js 15, featuring real-time analytics, personalized insights, and comprehensive sleep data visualization.
@@ -19,6 +24,7 @@ A modern sleep tracking web application built with Next.js 15, featuring real-ti
 ### 💼 Core Functionality
 
 - **Sleep Record Management**: Add, edit, and delete sleep entries with ease
+- **Creating Sleep Goal**: User can set sleep goal and check the status
 - **Real-time Statistics**: Comprehensive sleep analytics dashboard
 - **Sleep History**: Complete sleep record history with search and filter
 - **Date-based Tracking**: Track sleep patterns over time
