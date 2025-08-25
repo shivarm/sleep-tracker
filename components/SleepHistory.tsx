@@ -20,7 +20,12 @@ const RecordHistory = async () => {
           <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent">
             No Sleep Records Found
           </h3>
-          <p className="text-gray-600">Start tracking your sleep to see your history here.</p>
+          <p className="text-gray-600 mb-4">
+            Ready to unlock the secrets of better sleep? 🌙
+          </p>
+          <p className="text-gray-500 text-sm">
+            Begin logging your sleep patterns using the &quot;Track Your Sleep&quot; form above and watch your sleep journey unfold here.
+          </p>
         </div>
       </div>
     );
