@@ -10,7 +10,7 @@ export default async function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
-              <span className="text-md sm:text-2xl font-bold bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent">
+              <span className="text-md sm:text-2xl font-bold bg-gradient-to-r custom-style bg-clip-text text-transparent">
                 SleepTracker
               </span>
             </Link>
@@ -33,7 +33,7 @@ export default async function Navbar() {
 
             <SignedOut>
               <SignInButton>
-                <button className="w-full sm:w-auto bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:from-purple-600 hover:via-pink-600 hover:to-red-600 text-white sm:px-4 sm:py-2 px-3 py-1 text-sm sm:text-md rounded-md font-medium cursor-pointer">
+                <button className="w-full sm:w-auto bg-gradient-to-r custom-style hover:from-purple-600 hover:via-pink-600 hover:to-red-600 text-white sm:px-4 sm:py-2 px-3 py-1 text-sm sm:text-md rounded-md font-medium cursor-pointer">
                   Sign In
                 </button>
               </SignInButton>

@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Logo and Tagline */}
           <div className="text-center md:text-left mb-4 md:mb-0">
-            <h2 className="text-lg font-bold bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent">
+            <h2 className="text-lg font-bold bg-gradient-to-r custom-style bg-clip-text text-transparent">
               SleepTracker
             </h2>
             <p className="text-gray-600 text-sm">Track your sleep, improve your health.</p>
