@@ -24,3 +24,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.custom-style {
+  @apply from-purple-500 via-pink-500 to-red-500
+}
